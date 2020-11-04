@@ -1,0 +1,17 @@
+{
+  "realm": "ldap-test",
+  "auth-server-url": "http://localhost:8080/auth",
+  "ssl-required": "external",
+  "resource": "SampleServlet",
+  "credentials": {
+    "jwt": {
+      "client-key-password": "jboss@123",
+      "client-keystore-file": "classpath:SampleServlet.jks",
+      "client-keystore-password": "jboss@123",
+      "client-key-alias": "SampleServlet",
+      "token-timeout": 10,
+      "client-keystore-type": "jks"
+    }
+  },
+  "confidential-port": 0
+}
